@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/orte.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/rating.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/chiemsee.js" defer></script>
+    <script>
+      $(document).ready(function(){
+        $('.rating input').click(function(){
+          var rating = $(this).val();
+          $('#result').html('Du hast ' + rating + ' Sterne bewertet.');
+          // Hier kannst du eine AJAX-Anfrage senden, um die Bewertung an den Server zu senden und zu speichern.
+        });
+      });
+    </script>
+    <title>chiemsee</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bayern-Entdecken</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" target="_blank">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="impressum.html" target="_blank">Impressum</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Reiseziele
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="chiemsee.html">Chiemsee</a></li>
+                  <li><a class="dropdown-item" href="zugspitze.html">Zugspitze</a></li>
+                  <li><a class="dropdown-item" href="hoellental.html">Höllentalklamm</a></li>
+                  <li><a class="dropdown-item" href="berchtesgaden.html">Berchtesgadener Land</a></li>
+                  <li><a class="dropdown-item" href="allgäu.html">Allgäu</a></li>
+                  <li><a class="dropdown-item" href="münchen.html">München</a></li>
+                  <li><a class="dropdown-item" href="tegernsee.html">Tegernsee</a></li>
+                  <li><a class="dropdown-item" href="nürnberg.html">Nürnberg</a></li>
+                  <li><a class="dropdown-item" href="fürstenfeldbruck.html">Fürstenfeldbruck</a></li>
+                  <li><hr class="dropdown-divider"></li>
+
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="login.html" target="_blank">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <header class="wrapper">
+    <div class="container">
+      <!-- <h1>Chiemsee</h1> -->
+      <div id="slider">
+          <img src="./imgchiemsee/lake-7956268_1280.jpg" alt="see">
+      </div>
+      <div class="btn btnLeft">&lt;</div>
+      <div class="btn btnRight">&gt;</div>
+      <div id="layer"></div>
+    </div>
+  </header>
+  <main class="wrapper">
+    <div class="container">
+      <br><br><h1>Chiemsee</h1><br>
+      <p>Der Chiemsee, ein atemberaubendes Gewässer im Südosten Bayerns, erhebt sich majestätisch zwischen den sanften Hügeln der Alpen. Mit einer Fläche von etwa 80 Quadratkilometern ist der Chiemsee der größte See in Bayern und wird oft als "Bayerisches Meer" bezeichnet. Sein klares, azurblaues Wasser erstreckt sich bis zum Horizont, während sich die Uferlinie in der Ferne zu verlieren scheint. <br><br>
+          Mit einer durchschnittlichen Tiefe von etwa 25 Metern und einer maximalen Tiefe von über 70 Metern birgt der Chiemsee eine beeindruckende Menge an Wasser. Tatsächlich enthält er etwa 2,7 Kubikkilometer frisches Wasser, das von den umliegenden Bergen und Quellen gespeist wird. <br><br>
+          Umgeben von einer malerischen Landschaft aus grünen Wiesen, dichten Wäldern und schroffen Felsen bietet der Chiemsee nicht nur eine spektakuläre Aussicht, sondern auch eine Vielzahl von Freizeitmöglichkeiten. Von Wassersportarten wie Segeln, Surfen und Angeln bis hin zu entspannten Bootsfahrten auf dem ruhigen Wasser – hier findet jeder Besucher eine Aktivität nach seinem Geschmack. <br><br>
+          Entlang der Uferlinie erstrecken sich charmante Dörfer und Städte, die mit ihrer bayerischen Gastfreundschaft und ihrem traditionellen Flair begeistern. Die berühmten Herren- und Fraueninseln, die im See liegen, sind ebenfalls beliebte Ziele für Touristen. Auf Herrenchiemsee befindet sich das prächtige Schloss Herrenchiemsee, ein prunkvolles Schloss, das von König Ludwig II. erbaut wurde und Besucher mit seiner opulenten Architektur und seinen prächtigen Gärten verzaubert.
+          <br><br>Insgesamt ist der Chiemsee nicht nur ein Ort von natürlicher Schönheit und beeindruckender Größe, sondern auch ein Ort von kultureller und historischer Bedeutung, der Besucher aus aller Welt anzieht.</p>
+      <br>
+      <h2>Unsere TOP 3 Empfehlungen für Sie</h2>
+      <br>
+      <h3>Therme Bad Aibling</h3>
+      <img class="orte" src="./imgchiemsee/Therme.png" alt="therme">
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+      </div><br><br><br><br>
+      <div id="result"></div>
+      <p>Der erste Platz der Top Attraktionen am Chiemsee geht an die Therme Bad Aibling. Auf 10.000 m² und einer Wasserfläche von über 600 m² unternehmen Sie hier eine Reise durch verschiedene Welten. Die Therme am Chiemsee zeichnet sich durch einen ständigen Wechsel von Erlebnissen aus und beherbergt verschiedene Gärten, Bassins, Saunen und Ruheinseln unter den imposanten Kuppeln des Geländes.
+          Auszeit am Chiemsee
+
+          Die Therme Bad Aibling gilt als traditionelles Moorheilbad und besticht unter anderem mit einer beeindruckenden Saunalandschaft mit insgesamt sieben Saunen sowie einem Ruheraum, einem Hamam, einem Fürstenbad und einem Freibad. Hier erfahren Sie Entspannung und Erholung auf höchstem Niveau!</p>
+      <br><h3>Fraueninsel</h3>
+      <img class="orte" src="./imgchiemsee/Fraueninsel.png" alt="fraueninsel">
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+      </div><br><br><br><br>
+      <div id="result"></div>
+      <p>Mit einer Größe von nur 15 Hektar ist die Fraueninsel klein und überschaubar, aber nach der Herreninsel dennoch die zweitgrößte der drei Inseln im Chiemsee. Auf der autofreien Insel befinden sich 50 Häuser mit rund 300 Einwohnern – ein idyllisches und romantisches Kleinod also. Zahlreiche Dichter und Maler ließen sich bereits von der blühenden Pracht auf der Insel beflügeln und für ihre Werke inspirieren.
+          Das Kloster Frauenwörth
+
+          Das Highlight auf der Fraueninsel und ein beliebtes Ausflugsziel am Chiemsee ist das 1.200 Jahre alte Kloster Frauenwörth. Es nimmt etwa ein Drittel der Gesamtfläche der Insel ein und ist heute ein Ort für Erwachsenenbildung und Musikveranstaltungen. Zwar kann das Kloster selbst nicht besichtigt werden, dafür jedoch die Klosterkirche, die Torhalle, die Kapelle und der Friedhof. </p>
+      <br><h3>Hochfelln</h3>
+      <img class="orte" src="./imgchiemsee/Hochfelln.png" alt="hochfelln">
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+      </div><br><br><br><br>
+      <div id="result"></div>
+      <p>Der Hochfelln ist ein Berg in den Chiemgauer Alpen mit einer Höhe von 1.674 Metern. Sein Gipfel lässt sich zu Fuß erklimmen, aber ist auch mit der Hochfellnseilbahn zu erreichen. Von hier aus genießen Sie einen traumhaften Panoramablick – der Hochfelln wird zurecht auch gerne als Aussichtsterrasse des Chiemgau bezeichnet.
+          Hoch hinaus – auf dem Hochfelln
+
+          Auf der Spitze des Hochfelln steht das Gipfelkreuz, das im Jahr 1886 eingeweiht wurde. Heute ist es ein eindrucksvolles Denkmal und gibt je nach Lichteinfall ein wunderbares Bild ab. Direkt daneben befindet sich mit dem Hochfellnhaus der höchstgelegene gastronomische Betrieb im Chiemgau. Von der Terrasse aus genießen Sie den herrlichen Blick auf das Bayerische Alpenvorland und die gesamte Alpenkette.</p>
+
+      <hr>
+      <h3>Unterkünfte in ihrer Nähe <a href="https://www.booking.com/region/de/chiemsee.de.html?aid=1610832;label=chiemsee-iBZOtnm53WN30ztbiT4_4gS409911513591:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-307551212121:lp9114266:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YTiRJUvwM0AZUI4BdVUIsb0;ws=&gclid=Cj0KCQjw3ZayBhDRARIsAPWzx8pf_7S1aN5_yKNVirC--fNA7AqHzRyH9EIBkVjxyk6otxeMvzAXiXsaAoAJEALw_wcB" target="_blank" class="btn-booking" role="button" aria-pressed="true">Booking.com</a></h3>
+      <iframe class="orte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85628.22778705027!2d12.358425559693613!3d47.88060950676264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47766d7e4e3af6cb%3A0x88c0b379f2ea7eda!2sChiemsee!5e0!3m2!1sde!2sde!4v1715758271672!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </main>
+</body>
+</html>

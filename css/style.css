@@ -1,0 +1,47 @@
+.jumbotron {
+  background-image: url("../img/alpsee-532864_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 center;
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+      height: 250px;
+      background-position: 0 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+      height: 400px;
+  }
+}
+
+.pixel{
+  height: 250px ;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+
+.btn-booking {
+  display: inline-block;
+    padding: 10px 20px;
+     background-color: blue;
+      color: white;
+       text-decoration: none;
+         border: none;
+          border-radius: 5px;
+           cursor: pointer;
+
+}
+
+p {
+  font-size: 1.5rem;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      overflow: hidden; /* Verhindert, dass der Hintergrund während des Pop-up-Fensters gescrollt werden kann */
+    }
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 95%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .error {
+      color: red;
+    }
+    .popup-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Transparenz für den Hintergrund */
+      z-index: 998; /* Hintergrund sollte unter dem Pop-up-Fenster liegen */
+      backdrop-filter: blur(5px); /* Blur-Effekt für den Hintergrund */
+    }
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      z-index: 999; /* Pop-up-Fenster sollte über dem Hintergrund liegen */
+    }
+    .popup-content {
+      display: flex;
+      justify-content: space-between;
+    }
+    .close {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Register</h2>
+    <form id="registerForm" action="#" method="POST" onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <span id="passwordError" class="error"></span>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <div class="popup-background" id="popupBackground" style="display: none;"></div>
+  <div id="popup" class="popup" style="display: none;">
+    <div class="popup-content">
+      <h3>Erfolgreich registriert. Bestätigen Sie die Mail.</h3>
+      <span class="close" onclick="closePopup()">&#10006;</span>
+    </div>
+  </div>
+
+  <script>
+    function validateForm() {
+      var password = document.getElementById("password").value;
+      var passwordError = document.getElementById("passwordError");
+
+      var passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+      if (!passwordRegex.test(password)) {
+        passwordError.textContent = "Das Passwort muss mindestens 8 Zeichen lang sein und mindestens eine Zahl, einen Buchstaben und ein Sonderzeichen enthalten.";
+        return false;
+      } else {
+        passwordError.textContent = "";
+        var popupBackground = document.getElementById("popupBackground");
+        var popup = document.getElementById("popup");
+        popupBackground.style.display = "block";
+        popup.style.display = "block";
+        resetForm(); // Formularfelder zurücksetzen
+        return false; // Prevent form submission
+      }
+    }
+
+    function closePopup() {
+      var popupBackground = document.getElementById("popupBackground");
+      var popup = document.getElementById("popup");
+      popupBackground.style.display = "none";
+      popup.style.display = "none";
+    }
+
+    function resetForm() {
+      document.getElementById("registerForm").reset(); // Zurücksetzen des Formulars
+    }
+  </script>
+</body>
+</html>

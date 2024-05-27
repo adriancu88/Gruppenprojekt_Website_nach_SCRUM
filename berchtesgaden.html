@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/orte.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/rating.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/berchtesgaden.js" defer></script>
+    <script>
+      $(document).ready(function(){
+        $('.rating input').click(function(){
+          var rating = $(this).val();
+          $('#result').html('Du hast ' + rating + ' Sterne bewertet.');
+          // Hier kannst du eine AJAX-Anfrage senden, um die Bewertung an den Server zu senden und zu speichern.
+        });
+      });
+    </script>
+    <title>berchtesgaden</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bayern-Entdecken</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" target="_blank">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="impressum.html" target="_blank">Impressum</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Reiseziele
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="chiemsee.html">Chiemsee</a></li>
+                  <li><a class="dropdown-item" href="zugspitze.html">Zugspitze</a></li>
+                  <li><a class="dropdown-item" href="hoellental.html">Höllentalklamm</a></li>
+                  <li><a class="dropdown-item" href="berchtesgaden.html">Berchtesgadener Land</a></li>
+                  <li><a class="dropdown-item" href="allgäu.html">Allgäu</a></li>
+                  <li><a class="dropdown-item" href="münchen.html">München</a></li>
+                  <li><a class="dropdown-item" href="tegernsee.html">Tegernsee</a></li>
+                  <li><a class="dropdown-item" href="nürnberg.html">Nürnberg</a></li>
+                  <li><a class="dropdown-item" href="fürstenfeldbruck.html">Fürstenfeldbruck</a></li>
+                  <li><hr class="dropdown-divider"></li>
+
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="login.html" target="_blank">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <header class="wrapper">
+    <div class="container">
+      <!-- <h1>Chiemsee</h1> -->
+      <div id="slider">
+          <img src="./imgberchtesgaden/watzmann-7384218_1280.jpg" alt="watzmann">
+      </div>
+      <div class="btn btnLeft">&lt;</div>
+      <div class="btn btnRight">&gt;</div>
+      <div id="layer"></div>
+    </div>
+  </header>
+  <main class="wrapper">
+    <div class="container">
+      <br><br><h1>Berchtesgadener Land</h1><br>
+      <p>Das Berchtesgadener Land, eine malerische Region im Südosten Bayerns, ist ein wahres Paradies für Naturliebhaber und Outdoor-Enthusiasten. Eingebettet in die majestätischen Alpen, bietet die Region atemberaubende Landschaften mit tiefen Tälern, kristallklaren Seen und imposanten Berggipfeln. <br><br>
+
+        Einer der bekanntesten Höhepunkte ist der Königssee, ein glasklarer Gebirgssee, der von steilen Felswänden umgeben ist und oft als der schönste See Deutschlands bezeichnet wird. Nicht weit entfernt thront der Watzmann, der dritthöchste Berg Deutschlands, dessen markante Silhouette ein beliebtes Motiv für Fotografen und Maler ist.<br><br>
+
+
+        Das Berchtesgadener Land beherbergt auch den einzigen alpinen Nationalpark Deutschlands, den Nationalpark Berchtesgaden. Dieser bietet eine Vielzahl an Wander- und Kletterrouten durch unberührte Natur und ist ein Schutzgebiet für seltene Tier- und Pflanzenarten. <br><br>
+
+
+        Neben seiner natürlichen Schönheit ist das Berchtesgadener Land reich an kulturellen Schätzen. Die historische Stadt Berchtesgaden mit ihrer charmanten Altstadt und dem Königlichen Schloss lädt zum Bummeln und Verweilen ein. Ein weiteres Highlight ist das berühmte Kehlsteinhaus, auch bekannt als "Eagle's Nest", das hoch über dem Tal thront und eine spektakuläre Aussicht bietet.
+          <br><br>Ob Wandern, Bergsteigen, Skifahren oder einfach nur die Ruhe und Schönheit der Natur genießen – das Berchtesgadener Land bietet für jeden Geschmack das Richtige und ist zu jeder Jahreszeit ein lohnendes Reiseziel.</p>
+      <br>
+      <h2>Unsere TOP 3 Empfehlungen für Sie</h2>
+      <br>
+      <h3>Der Königssee</h3>
+      <img class="orte" src="./imgberchtesgaden/konigssee-179306_1280.jpg" alt="see">
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+      </div><br><br><br><br>
+      <div id="result"></div>
+      <p>Der Königssee bei Berchtesgaden ist bekannt für sein türkisblaues, kristallklares Wasser und die hübsche Wallfahrtskirche St. Bartholomä mit ihren roten Dächern, die sich auf einer Halbinsel am westlichen Ufer des Sees befindet. Der See wird von den umliegenden Alpen umrahmt, darunter auch das Watzmann-Massiv.<br><br>
+
+        Der See ist ein beliebtes Ausflugsziel, zum Beispiel zum Wandern, Klettern oder für Bootsfahrten. Auf dem etwa sieben Kilometer langen Königssee gibt es eine einzigartige Akustik. Hier ist es üblich, dass Bootsführer das Echo mit einer Trompete oder einem Horn demonstrieren.</p>
+      <br><h3>Nationalpark Berchtesgaden</h3>
+      <img class="orte" src="./imgberchtesgaden/nationalpark-berchtesgaden-m-12910467.jpg" alt="wanderweg">
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+      </div><br><br><br><br>
+      <div id="result"></div>
+      <p>Der Nationalpark Berchtesgaden, gegründet 1978, ist der einzige alpine Nationalpark Deutschlands und erstreckt sich über rund 210 Quadratkilometer im Südosten Bayerns. Er schützt eine unberührte Berglandschaft mit majestätischen Gipfeln, tiefen Tälern und kristallklaren Seen.
+
+        Ein herausragendes Merkmal des Parks ist der imposante Watzmann, der zweithöchste Berg Deutschlands, dessen markante Silhouette die Landschaft dominiert. Der Watzmann besteht aus mehreren Gipfeln, wobei der Hauptgipfel eine Höhe von 2.713 Metern erreicht. Der Berg ist berühmt für seine spektakulären Kletterrouten und den Watzmann-Ostwand, die höchste Wand der Ostalpen, die ein beliebtes Ziel für erfahrene Bergsteiger darstellt.
+
+        Der Park ist ein Paradies für Wanderer und Naturfreunde, mit zahlreichen Routen durch eine vielfältige Flora und Fauna. Seltene Tierarten wie Steinadler, Gämse und Alpensteinbock sind hier heimisch. </p>
+      <br><h3>Kehlsteinhaus</h3>
+      <img class="orte" src="./imgberchtesgaden/kehlsteinhaus-27.jpg" alt="kehlsteinhaus">
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+      </div><br><br><br><br>
+      <div id="result"></div>
+      <p>Das Kehlsteinhaus, auch bekannt als "Eagle's Nest," ist ein historisches Gebäude im Berchtesgadener Land, Bayern. Es wurde 1938 auf dem Gipfel des Kehlsteins, einem 1.834 Meter hohen Berg, errichtet. Das Bauwerk war ein Geschenk der NSDAP zu Adolf Hitlers 50. Geburtstag und diente ihm als Repräsentations- und Rückzugsort.
+
+        Das Kehlsteinhaus beeindruckt durch seine spektakuläre Lage und bietet atemberaubende Panoramablicke auf die Alpen und das Berchtesgadener Land. Heute ist es ein beliebtes Touristenziel und ein bedeutendes Mahnmal der Geschichte. Besucher können das Haus über eine beeindruckende Bergstraße und einen Aufzug erreichen, der in den Fels gehauen wurde.
+
+        Neben der historischen Bedeutung bietet das Kehlsteinhaus auch ein Restaurant, in dem Gäste die Aussicht bei einer Mahlzeit genießen können. Es ist ein Ort, der Naturerlebnis und Geschichtsverständnis auf einzigartige Weise verbindet.</p>
+
+      <hr><h3>Unterkünfte in ihrer Nähe <a href="https://www.booking.com/region/de/berchtesgadener-land.de.html?aid=1610832;label=berchtesgadener-land-MAA2DMXr7S8hByDmLSCifQS410687664693:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-322877201448:lp9114266:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YTiRJUvwM0AZUI4BdVUIsb0;ws=&gclid=Cj0KCQjw3ZayBhDRARIsAPWzx8ozyUML4ebV3N8I0UX4yXkYWN6fyOy6RkqyRFx1sqT_zRSmpq8lcxsaAu-QEALw_wcB" target="_blank" class="btn-booking" role="button" aria-pressed="true">Booking.com</a></h3>
+      <iframe class="orte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13104.982680407372!2d12.972254769255198!3d47.630899821889744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47768c0e4b7fbeb1%3A0x426c5d65a99d140!2sBerchtesgadener%20Land!5e0!3m2!1sen!2sde!4v1680000000000!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </main>
+</body>
+</html>

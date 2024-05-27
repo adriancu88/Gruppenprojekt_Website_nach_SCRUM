@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Register</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 95%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(5px);
+      display: none;
+    }
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      z-index: 999;
+      display: none;
+    }
+    .popup label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .popup input[type="text"],
+    .popup input[type="email"] {
+      width: calc(100% - 22px);
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .popup button {
+      width: 100%;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form id="loginForm" action="#" method="POST">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+      <p><a href="#" onclick="showForgotPassword()">Passwort vergessen?</a></p>
+    </form>
+    <hr>
+    <p>Noch kein Mitglied? <a href="register.html">Jetzt registrieren</a></p>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="popup">
+    <span class="close-btn" onclick="closeForgotPassword()">X</span>
+    <h3>Passwort vergessen?</h3>
+    <form id="forgotPasswordForm" action="#" method="POST">
+      <div class="form-group">
+        <label for="forgotUsername">Username:</label>
+        <input type="text" id="forgotUsername" name="forgotUsername" required>
+      </div>
+      <div class="form-group">
+        <label for="forgotEmail">Email:</label>
+        <input type="email" id="forgotEmail" name="forgotEmail" required>
+      </div>
+      <button type="submit">Neues Passwort generieren</button>
+    </form>
+  </div>
+
+  <script>
+    function showForgotPassword() {
+      var overlay = document.getElementById('overlay');
+      var popup = document.getElementById('popup');
+      overlay.style.display = 'block';
+      popup.style.display = 'block';
+    }
+
+    function closeForgotPassword() {
+      var overlay = document.getElementById('overlay');
+      var popup = document.getElementById('popup');
+      overlay.style.display = 'none';
+      popup.style.display = 'none';
+    }
+  </script>
+</body>
+</html>

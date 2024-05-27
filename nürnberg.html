@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/orte.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/rating.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/nürnberg.js" defer></script>
+    <script>
+      $(document).ready(function(){
+        $('.rating input').click(function(){
+          var rating = $(this).val();
+          $('#result').html('Du hast ' + rating + ' Sterne bewertet.');
+          // Hier kannst du eine AJAX-Anfrage senden, um die Bewertung an den Server zu senden und zu speichern.
+        });
+      });
+    </script>
+    <title>Nürnberg</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bayern-Entdecken</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" target="_blank">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="impressum.html" target="_blank">Impressum</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Reiseziele
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="chiemsee.html">Chiemsee</a></li>
+                  <li><a class="dropdown-item" href="zugspitze.html">Zugspitze</a></li>
+                  <li><a class="dropdown-item" href="hoellental.html">Höllentalklamm</a></li>
+                  <li><a class="dropdown-item" href="berchtesgaden.html">Berchtesgadener Land</a></li>
+                  <li><a class="dropdown-item" href="allgäu.html">Allgäu</a></li>
+                  <li><a class="dropdown-item" href="münchen.html">München</a></li>
+                  <li><a class="dropdown-item" href="tegernsee.html">Tegernsee</a></li>
+                  <li><a class="dropdown-item" href="nürnberg.html">Nürnberg</a></li>
+                  <li><a class="dropdown-item" href="fürstenfeldbruck.html">Fürstenfeldbruck</a></li>
+                  <li><hr class="dropdown-divider"></li>
+
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="login.html" target="_blank">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <header class="wrapper">
+    <div class="container">
+      <!-- <h1>Nürnberg</h1> -->
+      <div id="slider">
+        <img src="imgnürnberg/bilder/istockphoto-1262538591-612x612.jpg" alt="Bild 1">
+
+
+      </div>
+      <div class="btn btnLeft">&lt;</div>
+      <div class="btn btnRight">&gt;</div>
+      <div id="layer"></div>
+    </div>
+  </header>
+  <main class="wrapper">
+    <div class="container">
+      <br><br><h1>Nürnberg</h1><br>
+      <p>Nürnberg, eine historische Stadt in Mittelfranken, Bayern, ist bekannt für ihre reiche Geschichte und ihre beeindruckende Architektur. Die Stadt erstreckt sich entlang des Flusses Pegnitz und ist berühmt für ihre gut erhaltene Altstadt, die von einer imposanten Stadtmauer umgeben ist. <br><br>
+          Mit einer Bevölkerung von über 500.000 Menschen ist Nürnberg die zweitgrößte Stadt Bayerns. Die Stadt ist ein bedeutendes kulturelles und wirtschaftliches Zentrum und zieht jedes Jahr zahlreiche Touristen an. <br><br>
+          In der Altstadt finden sich viele historische Gebäude und Sehenswürdigkeiten, darunter die Kaiserburg, die als eines der wichtigsten Wahrzeichen der Stadt gilt. Die Burg thront über der Stadt und bietet einen spektakulären Blick auf die Umgebung. <br><br>
+          Nürnberg ist auch für seinen berühmten Christkindlesmarkt bekannt, der als einer der ältesten und bekanntesten Weihnachtsmärkte der Welt gilt. Der Markt zieht jährlich Millionen von Besuchern an, die die festliche Atmosphäre und die traditionellen Handwerkswaren genießen. <br><br>
+          Neben den historischen Sehenswürdigkeiten bietet Nürnberg auch eine Vielzahl von Museen, Theatern und anderen kulturellen Einrichtungen. Die Stadt ist bekannt für ihre lebendige Kulturszene und ihre vielfältigen Freizeitmöglichkeiten.</p>
+      <br>
+      <h2>Unsere TOP 3 Empfehlungen für Sie</h2>
+      <br>
+      <h3>Dokumentationszentrum Reichsparteitagsgelände</h3>
+      <img class="orte" src="imgnürnberg/bilder/Dokumentationszentrum.jpg" alt="Dokumentationszentrum">
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+      </div><br><br><br><br>
+      <div id="result"></div>
+      <p>Das Dokumentationszentrum Reichsparteitagsgelände ist ein Museum und eine Gedenkstätte, die sich mit der Geschichte des Nationalsozialismus und den Nürnberger Prozessen befasst. Das Museum befindet sich in einem Teil des unvollendeten Kongressbaus der NSDAP und bietet eine beeindruckende Ausstellung über die düstere Vergangenheit Deutschlands. Ein Besuch des Dokumentationszentrums ist eine wichtige und lehrreiche Erfahrung für jeden Nürnberg-Besucher.</p>
+      <br>
+      <h3>Albrecht-Dürer-Haus</h3>
+      <img class="orte" src="imgnürnberg/bilder/Albrecht_D_rrer_Haus.jpg" alt="Albrecht-Dürer-Haus">
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+      </div><br><br><br><br>
+      <div id="result"></div>
+      <p>Das Albrecht-Dürer-Haus, das ehemalige Wohnhaus des berühmten Malers und Grafikers Albrecht Dürer, ist heute ein Museum, das dem Leben und Werk des Künstlers gewidmet ist. Das Fachwerkhaus aus dem 15. Jahrhundert ist eines der wenigen original erhaltenen Künstlerhäuser der Renaissance. Besucher können hier eine Vielzahl von Dürers Werken und historischen Artefakten besichtigen und mehr über das Leben dieses bedeutenden Künstlers erfahren.</p>
+      <br>
+      <h3>Tiergarten Nürnberg</h3>
+      <img class="orte" src="imgnürnberg/bilder/Tiergarten.jpg" alt="Tiergarten">
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+      </div><br><br><br><br>
+      <div id="result"></div>
+      <p>Der Tiergarten Nürnberg ist einer der schönsten und größten Zoos in Deutschland. Der Zoo ist in einem landschaftlich reizvollen Park gelegen und beherbergt eine Vielzahl von Tierarten aus aller Welt. Besonders bekannt ist der Tiergarten für seine Delfinlagune und das Manatihaus. Ein Besuch im Tiergarten Nürnberg ist ein unvergessliches Erlebnis für die ganze Familie.</p>
+
+      <hr>
+      <h3>Unterkünfte in ihrer Nähe <a href="https://www.booking.com/city/de/nurnberg.html?aid=1610684;label=nurnberg-MrsyK8ydM1rtK4oGlaEbDQS553287997568:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-300160063110:lp9114264:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt10AsofPfvtt0;ws=&gclid=Cj0KCQjw3ZayBhDRARIsAPWzx8okqpAj3c2an9jMsomht3QBHy3HfskdrHSCiW-A30ViQHV0YBn0_SAaAi8fEALw_wcB" target="_blank" class="btn-booking" role="button" aria-pressed="true">Booking.com</a></h3>
+      <iframe class="orte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10419.149485765087!2d11.0535624!3d49.4520305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479f57c3fb3a84c7%3A0x420c14436e2d2a0!2sNürnberg%2C%20Deutschland!5e0!3m2!1sde!2sde!4v1715774831763!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </main>
+</body>
+</html>

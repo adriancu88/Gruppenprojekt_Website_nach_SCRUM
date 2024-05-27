@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/orte.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/rating.css">
+
+    <script src="./js/münchen.js" defer></script>
+    <script>
+      $(document).ready(function(){
+        $('.rating input').click(function(){
+          var rating = $(this).val();
+          $('#result').html('Du hast ' + rating + ' Sterne bewertet.');
+          // Hier kannst du eine AJAX-Anfrage senden, um die Bewertung an den Server zu senden und zu speichern.
+        });
+      });
+    </script>
+    <title>München</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bayern-Entdecken</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" target="_blank">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="impressum.html" target="_blank">Impressum</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Reiseziele
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="chiemsee.html">Chiemsee</a></li>
+                  <li><a class="dropdown-item" href="zugspitze.html">Zugspitze</a></li>
+                  <li><a class="dropdown-item" href="hoellental.html">Höllentalklamm</a></li>
+                  <li><a class="dropdown-item" href="berchtesgaden.html">Berchtesgadener Land</a></li>
+                  <li><a class="dropdown-item" href="allgäu.html">Allgäu</a></li>
+                  <li><a class="dropdown-item" href="münchen.html">München</a></li>
+                  <li><a class="dropdown-item" href="tegernsee.html">Tegernsee</a></li>
+                  <li><a class="dropdown-item" href="nürnberg.html">Nürnberg</a></li>
+                  <li><a class="dropdown-item" href="fürstenfeldbruck.html">Fürstenfeldbruck</a></li>
+                  <li><hr class="dropdown-divider"></li>
+
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="login.html" target="_blank">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <header class="wrapper">
+    <div class="container">
+
+      <div id="slider">
+          <img src="./imgmünchen/imgmünchen/ein-blick-auf-die-bayerische-landeshauptstadt-muenchen-2AB7XTA.jpg" alt="minga">
+      </div>
+      <div class="btn btnLeft">&lt;</div>
+      <div class="btn btnRight">&gt;</div>
+      <div id="layer"></div>
+    </div>
+  </header>
+  <main class="wrapper">
+    <div class="container">
+      <br><br><h1>München</h1><br>
+      <p>München, die Hauptstadt des Bundeslandes Bayern in Deutschland, ist eine lebendige Metropole, die für ihre reiche Geschichte, Kultur und Lebensqualität bekannt ist. Die Stadt ist ein kulturelles Zentrum, das eine Mischung aus traditioneller bayerischer Gemütlichkeit und modernem Stadtleben bietet. <br><br>
+
+        Eine der markantesten Sehenswürdigkeiten ist die Marienplatz, der zentrale Platz der Stadt, wo sich das imposante Neue Rathaus mit seinem Glockenspiel befindet. In unmittelbarer Nähe befindet sich die Frauenkirche, eine gotische Kathedrale, deren Türme zu den Wahrzeichen Münchens gehören. <br><br>
+        München ist auch für seine Biergärten berühmt, wo man in entspannter Atmosphäre lokale Spezialitäten und natürlich Bier genießen kann. Der Englische Garten, einer der größten Stadtparks der Welt, bietet grüne Oasen und ist ein beliebtes Ziel für Erholungssuchende. <br><br>
+        Kulturell hat München viel zu bieten, von renommierten Museen wie der Alten Pinakothek und der Pinakothek der Moderne bis hin zu Opern- und Theaterhäusern wie der Bayerischen Staatsoper und dem Residenztheater. <br><br>
+        Die Stadt ist auch für ihre jährlichen Veranstaltungen bekannt, darunter das berühmte Oktoberfest, das Millionen von Besuchern aus aller Welt anzieht, sowie das Starkbierfest im Frühjahr und zahlreiche kulturelle Festivals. <br><br>
+        München ist nicht nur eine Stadt der Geschichte und Tradition, sondern auch ein wichtiger Wirtschaftsstandort mit einer starken Wirtschaft, insbesondere in den Bereichen Automobilindustrie, Technologie und Finanzen. <br><br>
+        Insgesamt ist München eine vielfältige und lebendige Stadt, die für ihre Schönheit, Kultur und Lebensqualität geschätzt wird.
+    </p>
+      <br>
+      <h2>Unsere TOP 3 Empfehlungen für Sie</h2>
+      <br>
+      <h3>Marienplatz</h3>
+      <img class="orte" src="./imgmünchen/imgmünchen/muenchen-marienplatz-winterlich-630x354.jpg" alt="marienplatz">
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+      </div><br><br><br><br>
+      <div id="result"></div>
+        <p>Der Marienplatz ist das Herz der Stadt. Hier ist das ganze Jahr über richtig viel los. Münchener treffen sich hier zum Shoppen in den angrenzenden Einkaufsstraßen und feiern ihre Fußballer zur Meisterfeier. <br><br>
+        Ein touristisches Spektakel ist das täglich erklingende Glockenspiel im Neuen Rathaus. Jeweils um 11:00 und 12:00 Uhr sowie im Sommer zusätzlich um 17:00 Uhr stellen 16 Figuren die Hochzeit von Herzog Wilhelm V. mit Renate von Lothringen im Jahr 1568 nach. <br><br>
+        Unser Tipp: Da der Platz immer mit Menschen gefüllt ist, kannst du dir von oben einen besseren Überblick verschaffen. Mit einem Fahrstuhl fährst du auf den Turm des Rathauses. Willst du den Blick auf das Rathaus haben, findest du gegenüber im Café Glockenspiel einen gemütlichen Platz mit Aussicht.
+        </p>
+      <br><h3>Olympiapark</h3>
+      <img class="orte" src="./imgmünchen/imgmünchen/64_Olympiapark_2022-06_c_fabianstoffers_0360 (1).c78597a1.jpeg" alt="olympiapark">
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+      </div><br><br><br><br>
+      <div id="result"></div>
+        <p>Dort wo 1972 die olympischen Spiele stattfanden, befindet sich eine der beliebtesten Park- und Freizeitanlagen der Stadt. Zwischen Olympiastadion, Olympiahalle und -turm gehen heute viele Münchener ihrem Freizeitsport nach.<br><br>
+        Über die grüne Anlage joggen, auf dem Olympiasee rudern, im Olympiabad schwimmen oder in der SoccaFive Arena Fußball spielen – jeder Sportler findet hier etwas Passendes. <br><br>
+        Im Olympiapark finden aber auch zahlreiche Events, Konzerte und Kulturveranstaltungen statt. Unter dem weltberühmten Zeltdach des Olympiastadions geben sich heute Weltstars die Hand.
+        </p>
+      <br><h3>Schloss Nymphenburg</h3>
+      <img class="orte" src="./imgmünchen/imgmünchen/schloss-nymphenburg.jpg" alt="schloss nymphenburg">
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+      </div><br><br><br><br>
+      <div id="result"></div>
+        <p>Ein echtes Prunkschloss aus der bayrischen Monarchie ist das Schloss Nymphenburg. Es war ein Geschenk des Kurfürsten Ferdinand Maria an seine Frau zur Geburt seines Thronfolgers im Jahr 1664. Hach, wie romantisch! <br><br>
+        Im riesigen Schlossgarten gibt es breite Alleen, Fontänen, verzierte Brücken und sogar einen Kanal, über den man mit einem Gondoliere schippern kann. Den schönsten Blick auf die blühende Anlage hast du von der Freitreppe. In den Schlossgarten kommst du kostenlos. <br><br>
+        Wirf unbedingt auch einen Blick in das Innere des Schlosses. Die gefragtesten Bildhauer, Maler und Stuckateure der damaligen Zeit schmückten die Räume kunstvoll aus. <br><br>
+        Zudem kannst du im Schloss mehrere Museen besichtigen: Ein Naturkundemuseum, das Marstallmuseum mit Prunkschlitten und Pferdewägen, das Porzellanmuseum und das Erwin von Kreibig-Museum mit regionalen Kunstwerken.
+        </p>
+        <hr><h3>Unterkünfte in ihrer Nähe </h3>
+        <a href="https://www.booking.com/searchresults.de.html?ss=Chiemsee%2C+Deutschland&ssne=Garmisch-Partenkirchen&ssne_untouched=Garmisch-Partenkirchen&efdco=1&label=gen173nr-1FCAEoggI46AdIM1gEaDuIAQGYAQe4ARfIAQ_YAQHoAQH4AQuIAgGoAgO4AoGQl7IGwAIB0gIkN2MyZGI1N2MtN2NkZC00NGM4LWFjZmYtNThkOGMxOTFhYWVk2AIG4AIB&sid=43ca9dd1e41664c2b2a6514ba81d90b4&aid=304142&lang=de&sb=1&src_elem=sb&src=searchresults&dest_id=1813&dest_type=region&ac_position=0&ac_click_type=b&ac_langcode=de&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=75cf3e7d69ec01ff&ac_meta=GhA3NWNmM2U3ZDY5ZWMwMWZmIAAoATICZGU6BUNoaWVtQABKAFAA&group_adults=2&no_rooms=1&group_children=0%22" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Booking.com</a>
+
+
+      <hr><h3>Jetzt die Route planen</h3>
+      <iframe class="orte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85173.7240834143!2d11.45943572212641!3d48.15499582547778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd9%3A0x10cb84a7db1987d!2zTcO8bmNoZW4!5e0!3m2!1sde!2sde!4v1715773858511!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/orte.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/rating.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/GM7WX6zzkj5qpf4ywC/p7bFw7eJk4Mbo5oM8xA" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybEptUA+zryI65MkuhDFyZcxfIYw3EvFaU4DP9FJldebxTOAy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-qDo7qWQ5Zpq0oNrbPUtOw7SeLi0H5K4bLEb2nDV9D10AY5HcLP7P4mO1TQu3EC2r" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/zugspitze.js" defer></script>
+    <script>
+      $(document).ready(function(){
+        $('.rating input').click(function(){
+          var rating = $(this).val();
+          $('#result').html('Du hast ' + rating + ' Sterne bewertet.');
+          // Hier kannst du eine AJAX-Anfrage senden, um die Bewertung an den Server zu senden und zu speichern.
+        });
+      });
+    </script>
+    <title>zugspitze</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bayern-Entdecken</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" target="_blank">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="impressum.html" target="_blank">Impressum</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Reiseziele
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="chiemsee.html">Chiemsee</a></li>
+                  <li><a class="dropdown-item" href="zugspitze.html">Zugspitze</a></li>
+                  <li><a class="dropdown-item" href="hoellental.html">Höllentalklamm</a></li>
+                  <li><a class="dropdown-item" href="berchtesgaden.html">Berchtesgadener Land</a></li>
+                  <li><a class="dropdown-item" href="allgäu.html">Allgäu</a></li>
+                  <li><a class="dropdown-item" href="münchen.html">München</a></li>
+                  <li><a class="dropdown-item" href="tegernsee.html">Tegernsee</a></li>
+                  <li><a class="dropdown-item" href="nürnberg.html">Nürnberg</a></li>
+                  <li><a class="dropdown-item" href="fürstenfeldbruck.html">Fürstenfeldbruck</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="login.html" target="_blank">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <header class="wrapper">
+    <div class="container">
+      <div id="slider">
+          <img src="./imgzugspitze/imgzugspitze/zugspitze-7070995_1280.jpg" alt="Berge">
+      </div>
+      <div class="btn btnLeft">&lt;</div>
+      <div class="btn btnRight">&gt;</div>
+      <div id="layer"></div>
+    </div>
+  </header>
+  <main class="wrapper">
+    <div class="container">
+      <br><br><h1>Zugspitze</h1><br>
+      <p>Die Zugspitze, Deutschlands höchster Berg, erhebt sich majestätisch in den bayerischen Alpen nahe der Grenze zu Österreich. Mit einer Höhe von 2.962 Metern bietet ihr Gipfel einen spektakulären Blick auf die umliegende Landschaft. Erstbestiegen im Jahr 1820, ist die Zugspitze heute ein beliebtes Ziel für Touristen, die mit der Zahnradbahn, Seilbahn oder zu Fuß den Gipfel erreichen. Neben der atemberaubenden Aussicht locken auch Aktivitäten wie Skifahren, Wandern und Bergsteigen Abenteuerlustige das ganze Jahr über an.<br>Das Schönste an der Zugspitze liegt in ihrer Vielseitigkeit und den einzigartigen Landschaften, die sie bietet. Der Gipfel bietet eine atemberaubende Aussicht auf die Alpen, während der Eibsee mit seinem türkisfarbenen Wasser und den umliegenden Wäldern eine idyllische Kulisse bietet. Die Gletscherwelt Zugspitze ermöglicht faszinierende Einblicke in die Welt des Eises, während die Partnachklamm mit ihren imposanten Felsformationen und Wasserfällen beeindruckt. Die zahlreichen Wander- und Skirouten bieten Möglichkeiten, die Schönheit der Region auf eigene Faust zu erkunden, von gemütlichen Spaziergängen bis hin zu anspruchsvollen Bergtouren.<br> Letztendlich ist die wahre Schönheit der Zugspitze jedoch subjektiv und liegt im persönlichen Erleben und Entdecken der Naturwunder vor Ort.</p>
+      <br>
+      <h2>Unsere TOP 3 Empfehlungen für Sie</h2>
+      <br>
+      <h3>Eibsee</h3>
+      <img class="orte" src="./imgzugspitze/imgzugspitze/eibsee-8572001_1280.jpg" alt="eibsee">
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+      </div><br><br><br><br>
+      <div id="result"></div>
+      <p>Der Eibsee ist ein malerischer Bergsee, der am Fuße der Zugspitze liegt und zu den schönsten Seen Deutschlands zählt. Mit seinem türkisfarbenen Wasser, das von den umliegenden Bergen gespeist wird, und seiner idyllischen Lage inmitten dichter Wälder ist der Eibsee ein beliebtes Ziel für Naturliebhaber und Erholungssuchende.<br> Der See bietet zahlreiche Freizeitmöglichkeiten wie Bootfahren, Stand-Up-Paddeln, Schwimmen und Angeln. Entlang des Ufers führen malerische Wanderwege, die zu gemütlichen Spaziergängen einladen und atemberaubende Ausblicke auf die umliegende Berglandschaft bieten. Der Eibsee ist auch ein beliebtes Fotomotiv, insbesondere bei Sonnenauf- und -untergängen, wenn sich die majestätischen Gipfel der Zugspitze im klaren Wasser spiegeln.</p>
+      <br><h3>Gletscher</h3>
+      <img class="orte" src="./imgzugspitze/imgzugspitze/zugspitze-1539280_1280.jpg" alt="Gletscher">
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+      </div><br><br><br><br>
+      <div id="result"></div>
+      <p>Der Zugspitzgletscher, auch als Schneeferner bekannt, ist der nördlichste Gletscher der Ostalpen und der höchste Punkt Deutschlands, an dem man das ganze Jahr über Skifahren kann. Er liegt auf dem Gipfel der Zugspitze und erstreckt sich über eine Fläche von etwa 30 Hektar.<br> Der Gletscher ist ein faszinierendes Naturphänomen, das sich ständig verändert und durch den Einfluss von Temperatur und Niederschlag geformt wird.<br> Auf dem Zugspitzgletscher befinden sich verschiedene Skilifte und Pisten, die sowohl Anfängern als auch erfahrenen Skifahrern und Snowboardern vielfältige Möglichkeiten bieten. Darüber hinaus beherbergt der Gletscher das "Schneefernerhaus", eine Forschungsstation, die Einblicke in die Gletscherökologie und den Klimawandel bietet. Besucher können mit der Gletscherbahn Zugspitze zur Station fahren und von dort aus die eindrucksvolle Landschaft des Gletschers und die umliegenden Alpen genießen.
+    </p>
+      <br><h3>Bahnen</h3>
+      <img class="orte" src="./imgzugspitze/imgzugspitze/cable-car-977924_1280.jpg" alt="seilbahn">
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+      </div><br><br><br><br>
+      <div id="result"></div>
+      <p>Die Zugspitzebahnen bieten eine Vielzahl von Transportmöglichkeiten für Besucher, um den Gipfel der Zugspitze und die umliegende Region bequem zu erreichen und zu erkunden. Dazu gehören die Zahnradbahn, die Seilbahn und die Gletscherbahn.
+
+        Die Zahnradbahn ist eine historische Bahn, die seit über 90 Jahren Besucher von Garmisch-Partenkirchen auf den Gipfel der Zugspitze befördert. Sie bietet eine malerische und gemütliche Fahrt durch die alpine Landschaft und ermöglicht es den Passagieren, unterwegs die beeindruckende Aussicht zu genießen.<br>
+
+        Die Seilbahn ist eine moderne Transportmöglichkeit, die Besucher in kurzer Zeit von der Talstation Eibsee auf den Gipfel der Zugspitze bringt. Mit ihrer großen Kapazität und ihrem Komfort ist die Seilbahn eine beliebte Wahl für Reisende, die schnell und bequem den Gipfel erreichen möchten.<br>
+
+        Die Gletscherbahn ist eine weitere Seilbahn, die Besucher vom Gipfel der Zugspitze zum Zugspitzplatt befördert, wo sich der Zugspitzgletscher befindet. Von dort aus können Besucher die Gletscherwelt erkunden, Wanderungen unternehmen und die verschiedenen Aktivitäten auf dem Gletscher genießen.<br>
+
+        Zusätzlich zu diesen Hauptbahnen gibt es auch Wanderwege und Routen für Bergsteiger, die es Abenteuerlustigen ermöglichen, die Zugspitze auf eigene Faust zu erkunden. Insgesamt bieten die Zugspitzebahnen eine komfortable und abwechslungsreiche Möglichkeit, die Schönheit und Vielfalt der Zugspitze und ihrer Umgebung zu erleben.</p>
+
+        <h3>Unterkünfte in ihrer Nähe <a href="https://www.booking.com/region/de/zugspitze.de.html?aid=1610832;label=zugspitze-F0r4u9sxlbNKJY0Awb4_GgS438099764582:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-323867952215:lp9114264:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YTiRJUvwM0AZUI4BdVUIsb0;ws=&gclid=Cj0KCQjw3ZayBhDRARIsAPWzx8pB-IAm9gdEDP0xb9kSDmPQUyIFqpnGmZ3UttTCWr8ddezJWMh1E3AaAnNqEALw_wcB" target="_blank" class="btn-booking" role="button" aria-pressed="true">Booking.com</a></h3>
+
+      <hr><h3>Jetzt die Route planen</h3>
+      <iframe class="orte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19804.046074354545!2d10.967612949663318!3d47.4205574264136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479d02ee5107876d%3A0x34e257ebca223d97!2sZugspitze!5e0!3m2!1sde!2sde!4v1715775678683!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </main>
+</body>
+</html>

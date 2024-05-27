@@ -1,0 +1,29 @@
+.jumbotron {
+    background-image: url("../img_Fürstenfeldbruck/AltesRathaus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 center;
+  }
+   
+  @media (max-width: 768px) {
+    .jumbotron {
+        height: 250px;
+        background-position: 0 0px;
+    }
+  }
+   
+  @media (min-width: 768px) {
+    .jumbotron {
+        height: 400px;
+    }
+  }
+   
+  .pixel{
+    height: 250px ;
+  }
+   
+  .navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+   
+  }
